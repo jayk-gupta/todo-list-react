@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: radial-gradient(
+    circle closest-corner at center 400px,
+    #222,
+    rgb(0, 0, 0) 40%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  /* align-items: center; */
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-button {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track-piece {
+  color: rgb(165, 165, 165);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  /* outline: 1px solid slategrey; */
+  border-radius: 5px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  /* border: 2px solid white; */
+  gap: 2rem;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+select {
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  background-color: #222;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+option {
+  background: #222;
+}
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+  caret-color: white;
+  font-size: 1.2rem;
+  color: white;
+}
+input:focus {
+  border-bottom: 0.5px solid #a5a5a5;
+}
+.btn {
+  background: transparent;
+  border: none;
+  color: rgb(194, 193, 193);
+  background-color: rgb(53, 53, 53);
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+.btn-clear {
+  width: 50%;
+  margin: 0 auto;
+}
+.btn-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgba(121, 121, 121, 0.622);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 6rem 0;
+  gap: 1rem;
+}
+li {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #222;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid rgb(173, 173, 173);
+}
+li:hover {
+  background-color: #4e4e4e;
+}
+.task-list {
+  overflow-y: scroll;
+  height: 40%;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-action {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+     background-color: rgb(53, 53, 53);
+}
+
+.btn-cmplt {
+  color: rgba(172, 255, 47, 0.527);
+}
+.btn-del {
+  color: rgba(255, 0, 0, 0.525);
+}
+.btn-cmplt:hover {
+  color: rgb(172, 255, 47);
+}
+.btn-del:hover {
+  color: rgb(255, 0, 0);
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+.task-operation {
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+}
+.task-title {
+  background-color: #4b4b4b;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
